@@ -1,6 +1,17 @@
+import React from "react";
 import classNames from "classnames";
 
 import { ErrorContainer } from "../error-container";
+
+export type SwitchProps = {
+  children: React.ReactNode;
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+  error?: string;
+  disabled?: boolean;
+  className?: string;
+  "data-testid"?: string;
+};
 
 export const Switch = ({
   children,
@@ -9,16 +20,18 @@ export const Switch = ({
   error,
   disabled,
   className,
-}) => {
+  ...props
+}: SwitchProps) => {
   return (
     <div className={classNames("zoba-switch", className)}>
-      <div className={"zoba-switch-container"}>
+      <div className="zoba-switch-container">
         <input
           type="checkbox"
-          className={"zoba-switch-styling"}
+          className="zoba-switch-styling"
           onChange={(event) => onChange(event.target.checked)}
           checked={checked}
           disabled={disabled}
+          {...props}
         />
         {children}
       </div>
