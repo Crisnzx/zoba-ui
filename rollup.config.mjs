@@ -5,6 +5,7 @@ import typescript from "@rollup/plugin-typescript";
 import terser from "@rollup/plugin-terser";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
+import svgr from "@svgr/rollup";
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -30,6 +31,7 @@ export default [
       //   exclude: "node_modules/**",
       //   presets: ["@babel/preset-react"],
       // }),
+      svgr(),
       postcss({
         plugins: [],
         minimize: true,
