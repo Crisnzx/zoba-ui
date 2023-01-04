@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-import { ErrorContainer } from "@/presentation/components/form-components/error-container";
+import { ErrorContainer } from "../error-container";
 
 export const Switch = ({
   children,
@@ -19,7 +19,6 @@ export const Switch = ({
           onChange={(event) => onChange(event.target.checked)}
           checked={checked}
           disabled={disabled}
-          {...props}
         />
         {children}
       </div>
