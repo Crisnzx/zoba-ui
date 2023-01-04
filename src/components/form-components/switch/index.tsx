@@ -3,6 +3,10 @@ import classNames from "classnames";
 
 import { ErrorContainer } from "../error-container";
 
+import "./styles.scss";
+
+// Add sass support
+// Add unit tests
 export type SwitchProps = {
   children: React.ReactNode;
   checked: boolean;
