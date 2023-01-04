@@ -3,6 +3,7 @@ import classNames from "classnames";
 
 import { ErrorContainer } from "../error-container";
 
+// TODO: The css is not being applied in the client, that's the expected behaviour for this library but the reason why is unknown
 import "./styles.scss";
 
 // Add sass support

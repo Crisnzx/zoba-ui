@@ -1,4 +1,5 @@
 import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Switch } from "../components/form-components";
 
@@ -7,10 +8,10 @@ export default {
   title: "ZobaUI/Switch",
   component: Switch,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-};
+} as ComponentMeta<typeof Switch>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template = (args) => <Switch {...args} />;
+const Template: ComponentStory<typeof Switch> = (args) => <Switch {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
