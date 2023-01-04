@@ -1,4 +1,3 @@
-import babel from "rollup-plugin-babel";
 import resolve from "@rollup/plugin-node-resolve";
 import external from "rollup-plugin-peer-deps-external";
 import commonjs from "@rollup/plugin-commonjs";
@@ -32,7 +31,7 @@ export default [
       resolve(),
       commonjs(),
       typescript(),
-      // terser(),
+      terser(),
     ],
   },
   {
