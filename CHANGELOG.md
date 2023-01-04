@@ -1,3 +1,12 @@
+## 0.0.2 (2023-01-04)
+
+
+### Features
+
+* Add sass support ([65ba91b](https://github.com/Crisnzx/zoba-ui/commit/65ba91b950c867e873d7258691762ed67f26762d))
+
+
+
 ## 0.0.1 (2023-01-04)
 
 
