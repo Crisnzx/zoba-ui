@@ -1,0 +1,15 @@
+/* stylelint-disable selector-pseudo-class-no-unknown */
+/* stylelint-disable property-no-unknown */
+$white: #fff;
+$gray20: #aaa;
+$gray90: #333;
+$black: #000;
+$red: #f00;
+
+:export {
+  white: $white;
+  gray20: $gray20;
+  gray90: $gray90;
+  black: $black;
+  red: $red;
+}
