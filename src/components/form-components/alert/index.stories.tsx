@@ -1,32 +1,39 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Switch } from "../components/form-components";
+import { Alert, AlertTypes } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "ZobaUI/Switch",
-  component: Switch,
+  title: "ZobaUI/Alert",
+  component: Alert,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-} as ComponentMeta<typeof Switch>;
+} as ComponentMeta<typeof Alert>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Switch> = (args) => <Switch {...args} />;
+const Template: ComponentStory<typeof Alert> = (args) => <Alert {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  children: <p>This is the primary Switch storie</p>,
+  type: AlertTypes.ERROR,
+  title: "Oi",
+  description: "primary",
+  onUnmountAlert: () => {},
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  children: <p>Disabled Switch</p>,
-  disabled: true,
+  type: AlertTypes.ERROR,
+  title: "Oi",
+  description: "primary",
+  onUnmountAlert: () => {},
 };
 
 export const Error = Template.bind({});
 Error.args = {
-  children: <p>Switch with Error</p>,
-  error: "This field is required",
+  type: AlertTypes.ERROR,
+  title: "Oi",
+  description: "primary",
+  onUnmountAlert: () => {},
 };
