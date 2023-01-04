@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import { ErrorContainer } from "../error-container";
+import { ErrorContainer } from "@/components/form-components/error-container";
 
 // TODO: The css is not being applied in the client, that's the expected behaviour for this library but the reason why is unknown
 import "./styles.scss";
