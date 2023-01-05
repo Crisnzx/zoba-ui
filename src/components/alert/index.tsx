@@ -48,7 +48,7 @@ export const Alert = ({
       role="alert"
     >
       <div className="zoba-icon-container" aria-hidden="true">
-        <CheckIcon className="zoba-icon" />
+        <AlertIcon className="zoba-icon" />
       </div>
       <div className="zoba-text-container">
         <h4 className="zoba-title">{title}</h4>
@@ -60,7 +60,7 @@ export const Alert = ({
         className="zoba-close-toast-container"
         aria-label="Close alert"
       >
-        <AlertIcon className="zoba-close-toast" />
+        <CloseIcon className="zoba-close-toast" />
       </button>
     </aside>
   );
