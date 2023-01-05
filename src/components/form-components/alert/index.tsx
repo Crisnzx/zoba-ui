@@ -6,13 +6,8 @@ import { CloseIcon } from "@/assets/react-svgs";
 
 import "./styles.scss";
 
-export enum AlertTypes {
-  SUCCESS = "success",
-  ERROR = "error",
-}
-
-type AlertProps = {
-  type: AlertTypes;
+export type AlertProps = {
+  type: "success" | "error";
   title: string;
   description: string;
   onUnmountAlert: () => void;
