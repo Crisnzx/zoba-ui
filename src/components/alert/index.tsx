@@ -41,24 +41,28 @@ export const Alert = ({
 
   return (
     <aside
-      className={classNames("zoba-container", type, closeAnimation && "close")}
+      className={classNames(
+        "z-alert",
+        `z-alert--${type}`,
+        closeAnimation && "z-alert--close"
+      )}
       data-testid={`${type}-alert`}
       role="alert"
     >
-      <div className="zoba-icon-container" aria-hidden="true">
-        <AlertIcon className="zoba-icon" />
+      <div className="z-alert__icon-container" aria-hidden="true">
+        <AlertIcon className="z-alert__icon" />
       </div>
-      <div className="zoba-text-container">
-        <h4 className="zoba-title">{title}</h4>
-        <p className="zoba-description">{description}</p>
+      <div className="z-alert__text-container">
+        <h4 className="z-alert__title">{title}</h4>
+        <p className="z-alert__description">{description}</p>
       </div>
       <button
         type="button"
         onClick={closeAlert}
-        className="zoba-close-toast-container"
+        className="z-alert__close-toast-container"
         aria-label="Close alert"
       >
-        <CloseIcon className="zoba-close-toast" />
+        <CloseIcon className="z-alert__close-toast" />
       </button>
     </aside>
   );

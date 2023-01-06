@@ -6,8 +6,6 @@ type ErrorContainerProps = {
 
 export const ErrorContainer = ({ error }: ErrorContainerProps) => {
   return (
-    <div className="zoba-error-container">
-      {error && <span className={"zoba-error"}>{error}</span>}
-    </div>
+    <div className="zoba-error-container">{error && <span>{error}</span>}</div>
   );
 };

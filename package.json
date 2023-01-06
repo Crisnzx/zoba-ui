@@ -1,6 +1,6 @@
 {
-  "name": "zoba-react-ui",
-  "version": "0.0.10",
+  "name": "zoba-ui",
+  "version": "0.0.11",
   "description": "A React component library that abstracts the implementations but at the same time gives you the power of styling the way you want",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

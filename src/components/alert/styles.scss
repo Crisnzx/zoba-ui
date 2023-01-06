@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-.zoba-container {
+.z-alert {
   padding: 1.8rem;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   right: 2.4rem;
   bottom: 7rem;
   z-index: 120;
-  box-shadow: 4px 4px 10px 0 rgba($black, 0.2);
+  box-shadow: 4px 4px 10px 0 rgba(black, 0.2);
   animation: alert-appear 0.7s ease-out forwards;
 
   @include lg {
@@ -23,21 +23,21 @@
     right: unset;
   }
 
-  &.close {
+  &--close {
     animation: alert-hide 0.4s ease-in forwards;
   }
 
-  &.success {
-    background-color: $white;
-    color: $black;
+  &--success {
+    background-color: white;
+    color: black;
   }
 
-  &.error {
-    background-color: $white;
-    color: $black;
+  &--error {
+    background-color: red;
+    color: black;
   }
 
-  .zoba-icon-container {
+  .z-alert__icon-container {
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -47,43 +47,43 @@
     background-color: currentcolor;
     margin-right: 1.6rem;
 
-    .zoba-icon {
-      fill: $white;
+    .z-alert__icon {
+      fill: white;
       width: 1.6rem;
       height: 1.6rem;
     }
   }
 
-  .zoba-text-container {
+  .z-alert__text-container {
     flex: 1;
 
-    .zoba-title {
+    .z-alert__title {
       font-size: 1.4rem;
       line-height: 1.6rem;
       font-weight: bold;
       margin-bottom: 0.2rem;
     }
 
-    .zoba-description {
+    .z-alert__description {
       font-size: 1.4rem;
-      color: $black;
+      color: black;
       text-align: start;
     }
   }
 
-  .zoba-close-toast-container {
+  .z-alert__close-toast-container {
     font-size: 0;
     margin-left: auto;
     transform: translate(10px, -13px);
 
-    .zoba-close-toast {
+    .z-alert__close-toast {
       width: 2rem;
       height: 2rem;
-      fill: $black;
+      fill: black;
       transition: fill 0.2s;
 
       &:hover {
-        fill: $black;
+        fill: blue;
       }
     }
   }
