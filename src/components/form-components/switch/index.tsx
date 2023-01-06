@@ -24,11 +24,11 @@ export const Switch = ({
   ...props
 }: SwitchProps) => {
   return (
-    <div className={classNames("zoba-switch", className)}>
-      <div className="zoba-switch__container">
+    <div className={classNames("z-switch", className)}>
+      <div className="z-switch__container">
         <input
           type="checkbox"
-          className="zoba-switch__checkbox"
+          className="z-switch__checkbox"
           onChange={(event) => onChange(event.target.checked)}
           checked={checked}
           disabled={disabled}

@@ -1,0 +1,31 @@
+@import "../../../../styles/variables.scss";
+
+.z-autocomplete {
+  position: relative;
+
+  .z-autocomplete__dropdown {
+    position: absolute;
+    top: 4.6rem;
+    background-color: white;
+    width: 100%;
+    border: solid 0.1rem black;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    max-height: 20rem;
+    overflow: auto;
+
+    .z-autocomplete__option {
+      padding-left: 1.6rem;
+      color: black;
+      font-size: 1.4rem;
+      min-height: 4rem;
+      text-align: left;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}

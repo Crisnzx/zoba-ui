@@ -8,6 +8,7 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/addon-postcss",
     "storybook-addon-sass-postcss",
+    "storybook-addon-rem",
   ],
   framework: "@storybook/react",
   webpackFinal: async (config, { configType }) => {

@@ -1,11 +1,14 @@
 import React from "react";
 
 type ErrorContainerProps = {
+  className?: string;
   error?: string;
 };
 
-export const ErrorContainer = ({ error }: ErrorContainerProps) => {
+export const ErrorContainer = ({ className, error }: ErrorContainerProps) => {
   return (
-    <div className="zoba-error-container">{error && <span>{error}</span>}</div>
+    <div className="z-error-container">
+      {error && <span className={className || ""}>{error}</span>}
+    </div>
   );
 };

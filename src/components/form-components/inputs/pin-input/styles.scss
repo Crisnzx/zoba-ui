@@ -1,0 +1,37 @@
+@import "../../../../styles/variables.scss";
+
+.z-pin-input {
+  .z-pin-input__inputs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .z-pin-input__input {
+      border: 1px solid black;
+      border-radius: 0.8rem;
+      height: 5.6rem;
+      width: 4.8rem;
+      text-align: center;
+      font-size: 3.2rem;
+
+      &:focus {
+        outline: none;
+        border: 1px solid blue;
+      }
+
+      &--error {
+        border: 1px solid red;
+      }
+
+      & + .z-pin-input__input {
+        margin-left: 0.8rem;
+      }
+    }
+  }
+
+  &__error {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}

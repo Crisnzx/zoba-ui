@@ -1,10 +1,10 @@
-.zoba-switch {
-  .zoba-switch__container {
+.z-switch {
+  .z-switch__container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
-    .zoba-switch__checkbox {
+    .z-switch__checkbox {
       position: relative;
       appearance: none;
       outline: none;
@@ -40,7 +40,7 @@
   }
 }
 
-.zoba-error-container {
+.z-error-container {
   align-self: flex-start;
   height: 2.4rem;
   padding-top: 0.4rem;
