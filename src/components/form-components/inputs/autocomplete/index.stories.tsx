@@ -6,7 +6,7 @@ import { Autocomplete } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "ZobaUI/Autocomplete",
+  title: "ZobaUI/Form/Autocomplete",
   component: Autocomplete,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof Autocomplete>;

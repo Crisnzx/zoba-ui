@@ -5,7 +5,7 @@ import { Textarea } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "ZobaUI/Textarea",
+  title: "ZobaUI/Form/Textarea",
   component: Textarea,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof Textarea>;

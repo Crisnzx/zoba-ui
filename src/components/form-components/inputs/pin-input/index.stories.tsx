@@ -5,7 +5,7 @@ import { PinInput } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "ZobaUI/PinInput",
+  title: "ZobaUI/Form/PinInput",
   component: PinInput,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof PinInput>;

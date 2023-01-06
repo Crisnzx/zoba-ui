@@ -5,7 +5,7 @@ import { Switch } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "ZobaUI/Switch",
+  title: "ZobaUI/Form/Switch",
   component: Switch,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof Switch>;

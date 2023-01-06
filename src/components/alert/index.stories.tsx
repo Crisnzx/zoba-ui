@@ -5,7 +5,7 @@ import { Alert } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "ZobaUI/Alert",
+  title: "ZobaUI/Form/Alert",
   component: Alert,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof Alert>;

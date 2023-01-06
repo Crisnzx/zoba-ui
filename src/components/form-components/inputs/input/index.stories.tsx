@@ -5,7 +5,7 @@ import { Input } from ".";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "ZobaUI/Input",
+  title: "ZobaUI/Form/Input",
   component: Input,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof Input>;
