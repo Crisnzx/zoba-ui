@@ -1,8 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 
-import "./styles.scss";
-
 type DefaultButtonProps = React.DetailedHTMLProps<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement

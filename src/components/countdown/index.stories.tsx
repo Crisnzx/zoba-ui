@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { Countdown, CountdownRef } from ".";
-import "./styles.scss";
 import classNames from "classnames";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

@@ -4,8 +4,6 @@ import classNames from "classnames";
 import { ArrowDownIcon } from "@/assets/react-svgs";
 import { RandomHelper } from "@/helpers/random-helper";
 
-import "./styles.scss";
-
 type AccordionProps = {
   headerTitle: string;
   children: React.ReactNode;
