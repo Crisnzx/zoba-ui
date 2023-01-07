@@ -3,8 +3,6 @@ import classNames from "classnames";
 
 import { ErrorContainer } from "@/components/form-components/error-container";
 
-import "./styles.scss";
-
 export type TextareaProps = Omit<
   React.DetailedHTMLProps<
     React.TextareaHTMLAttributes<HTMLTextAreaElement>,

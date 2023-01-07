@@ -1,6 +1,10 @@
 import "../src/styles/reset.scss";
 import "../src/components/alert/styles.scss";
 import "../src/components/form-components/switch/styles.scss";
+import "../src/components/form-components/inputs/autocomplete/styles.scss";
+import "../src/components/form-components/inputs/input/styles.scss";
+import "../src/components/form-components/inputs/pin-input/styles.scss";
+import "../src/components/form-components/inputs/textarea/styles.scss";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

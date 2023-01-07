@@ -4,7 +4,6 @@ import InputMask from "react-input-mask";
 
 import { ErrorContainer } from "@/components/form-components/error-container";
 
-import "./styles.scss";
 import { InputProps } from "./input-props";
 
 const InputComponent = (

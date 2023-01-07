@@ -4,8 +4,6 @@ import classNames from "classnames";
 import { ONLY_NUMBER_REGEX } from "@/helpers/regex";
 import { ErrorContainer } from "@/components/form-components/error-container";
 
-import "./styles.scss";
-
 export type PinInputProps = {
   value: string;
   onChange: (value: string) => void;
