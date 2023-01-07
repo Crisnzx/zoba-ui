@@ -46,8 +46,8 @@ const InputComponent = (
   );
 
   const renderInput = () => (
-    <div>
-      <div className={classNames("z-input", className)}>
+    <div className={classNames("z-input", className)}>
+      <div className={"z-input__container"}>
         <input
           {...otherProps}
           className={classNames("z-input__input", {

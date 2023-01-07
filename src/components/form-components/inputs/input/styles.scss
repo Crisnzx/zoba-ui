@@ -8,45 +8,55 @@
 }
 
 .z-input {
-  position: relative;
-  min-width: 30rem;
+  .z-input__container {
+    position: relative;
+    min-width: 30rem;
 
-  .z-input__label {
-    font-size: 1.4rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1.4rem;
-    pointer-events: none;
-    transition: all 0.2s ease-out;
-    background-color: white;
-    color: gray;
+    .z-input__label {
+      font-size: 1.4rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1.4rem;
+      pointer-events: none;
+      transition: all 0.2s ease-out;
+      background-color: white;
+      color: gray;
 
-    &--has-text {
-      @include move-label-to-top;
-    }
-  }
-
-  .z-input__input {
-    outline: none;
-    border: 2px solid black;
-    border-radius: 8px;
-    min-height: 4rem;
-    padding: 1rem 1.2rem;
-    width: 100%;
-    font-size: 1.6rem;
-
-    &--error {
-      border: 2px solid red;
-    }
-
-    &:focus,
-    &:-webkit-autofill {
-      border: 2px solid blue;
-
-      & + .z-input__label {
+      &--has-text {
         @include move-label-to-top;
       }
     }
+
+    .z-input__input {
+      outline: none;
+      border: 2px solid black;
+      border-radius: 8px;
+      min-height: 4rem;
+      padding: 1rem 1.2rem;
+      width: 100%;
+      font-size: 1.6rem;
+
+      &--error {
+        border: 2px solid red;
+      }
+
+      &:focus,
+      &:-webkit-autofill {
+        border: 2px solid blue;
+
+        & + .z-input__label {
+          @include move-label-to-top;
+        }
+      }
+    }
+  }
+
+  .z-error-container {
+    align-self: flex-start;
+    height: 2.4rem;
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
+    color: red;
   }
 }

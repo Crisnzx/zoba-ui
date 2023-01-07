@@ -8,45 +8,54 @@
 }
 
 .z-textarea {
-  position: relative;
-  min-width: 30rem;
+  .z-textarea__container {
+    position: relative;
+    min-width: 30rem;
 
-  .z-textarea__label {
-    font-size: 1.4rem;
-    position: absolute;
-    left: 1.4rem;
-    top: 1rem;
-    pointer-events: none;
-    transition: all 0.2s ease-out;
-    background-color: white;
-    color: gray;
+    .z-textarea__label {
+      font-size: 1.4rem;
+      position: absolute;
+      left: 1.4rem;
+      top: 1rem;
+      pointer-events: none;
+      transition: all 0.2s ease-out;
+      background-color: white;
+      color: gray;
 
-    &--has-text {
-      @include move-label-to-top;
-    }
-  }
-
-  .z-textarea__textarea {
-    outline: none;
-    border: 2px solid black;
-    border-radius: 8px;
-    height: 8.8rem;
-    padding: 1rem 1.2rem;
-    width: 100%;
-    font-size: 1.6rem;
-    resize: none;
-
-    &--error {
-      border: 2px solid red;
-    }
-
-    &:focus,
-    &:-webkit-autofill {
-      border: 2px solid blue;
-
-      & + .z-textarea__label {
+      &--has-text {
         @include move-label-to-top;
       }
     }
+
+    .z-textarea__textarea {
+      outline: none;
+      border: 2px solid black;
+      border-radius: 8px;
+      height: 8.8rem;
+      padding: 1rem 1.2rem;
+      width: 100%;
+      font-size: 1.6rem;
+      resize: none;
+
+      &--error {
+        border: 2px solid red;
+      }
+
+      &:focus,
+      &:-webkit-autofill {
+        border: 2px solid blue;
+
+        & + .z-textarea__label {
+          @include move-label-to-top;
+        }
+      }
+    }
+  }
+  .z-error-container {
+    align-self: flex-start;
+    height: 2.4rem;
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
+    color: red;
   }
 }

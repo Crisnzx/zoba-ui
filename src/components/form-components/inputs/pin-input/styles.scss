@@ -29,9 +29,17 @@
     }
   }
 
-  &__error {
-    width: 100%;
-    display: block;
-    text-align: center;
+  .z-error-container {
+    align-self: flex-start;
+    height: 2.4rem;
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
+    color: red;
+
+    .z-pin-input__error {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
   }
 }

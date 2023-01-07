@@ -53,8 +53,8 @@ export const Textarea = ({
   );
 
   return (
-    <div>
-      <div className={classNames("z-textarea", className)}>
+    <div className={classNames("z-textarea", className)}>
+      <div className="z-textarea__container">
         <textarea
           {...otherProps}
           className={classNames("z-textarea__textarea", {
