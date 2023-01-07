@@ -6,7 +6,7 @@ import { ErrorContainer } from "@/components/form-components/error-container";
 
 import "./styles.scss";
 
-type PinInputProps = {
+export type PinInputProps = {
   value: string;
   onChange: (value: string) => void;
   error?: string;

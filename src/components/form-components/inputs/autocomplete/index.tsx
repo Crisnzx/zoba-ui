@@ -12,7 +12,7 @@ import { Option } from "@/helpers/form-types";
 
 import "./styles.scss";
 
-type AutocompleteProps = Omit<InputProps, "type"> & {
+export type AutocompleteProps = Omit<InputProps, "type"> & {
   options: Option[];
 };
 
