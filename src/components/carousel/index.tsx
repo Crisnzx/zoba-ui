@@ -13,7 +13,7 @@ export type CarouselPageBreakpoint = {
   itemsToShow: number;
 };
 
-type CarouselProps = {
+export type CarouselProps = {
   children: React.ReactNode[];
   pageBreakpoints: CarouselPageBreakpoint[];
   className?: string;
