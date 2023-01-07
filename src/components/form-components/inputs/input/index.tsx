@@ -5,24 +5,7 @@ import InputMask from "react-input-mask";
 import { ErrorContainer } from "@/components/form-components/error-container";
 
 import "./styles.scss";
-
-export type InputProps = Omit<
-  React.DetailedHTMLProps<
-    React.InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
-  >,
-  "onChange" | "ref"
-> & {
-  type?: "text" | "email" | "password" | "tel" | "number";
-  label: string;
-  value: string;
-  error?: string;
-  disableAutofill?: boolean;
-  iconRight?: React.ReactNode;
-  onChange?: (value: string) => void;
-  mask?: string;
-  disablePaste?: boolean;
-};
+import { InputProps } from "./input-props";
 
 const InputComponent = (
   {

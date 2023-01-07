@@ -6,7 +6,8 @@ import React, {
   useState,
 } from "react";
 
-import { Input, InputProps } from "@/components/form-components/inputs/input";
+import { Input } from "@/components/form-components/inputs/input";
+import { InputProps } from "@/components/form-components/inputs/input/input-props";
 import { Option } from "@/helpers/form-types";
 
 import "./styles.scss";
