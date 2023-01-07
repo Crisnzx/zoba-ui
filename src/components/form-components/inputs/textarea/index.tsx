@@ -3,6 +3,7 @@ import classNames from "classnames";
 
 import { ErrorContainer } from "@/components/form-components/error-container";
 
+// TODO: Filter this type to simplify the component API
 export type TextareaProps = Omit<
   React.DetailedHTMLProps<
     React.TextareaHTMLAttributes<HTMLTextAreaElement>,

@@ -1,3 +1,4 @@
+// TODO: Filter this type to simplify the component API
 export type InputProps = Omit<
   React.DetailedHTMLProps<
     React.InputHTMLAttributes<HTMLInputElement>,

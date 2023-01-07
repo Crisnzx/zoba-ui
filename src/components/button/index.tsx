@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
+// TODO: Filter this type to simplify the component API
 type DefaultButtonProps = React.DetailedHTMLProps<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
