@@ -1,0 +1,66 @@
+@import "../../styles/variables.scss";
+
+@mixin set-backgrounds($background-color) {
+  background-color: $background-color;
+  background-image: radial-gradient(
+    circle,
+    transparent 1%,
+    $background-color 0.8%
+  );
+}
+
+.z-button {
+  .z-button__btn {
+    border-radius: 0.5rem;
+    padding: 1.3rem 2rem;
+    width: min(18rem, 100%);
+    font-weight: bold;
+    overflow: hidden;
+    background-position: center;
+    background-size: 13000%;
+    transition: background 0.6s, opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--primary {
+      @include set-backgrounds(black);
+      color: white;
+      background-image: radial-gradient(circle, transparent 1%, black 0.8%);
+
+      &:active {
+        background-color: blue;
+      }
+    }
+
+    &--gray {
+      @include set-backgrounds(gray);
+      color: white;
+      background-image: radial-gradient(circle, transparent 1%, gray 0.8%);
+
+      &:active {
+        background-color: black;
+      }
+    }
+
+    &--loading {
+      color: yellow;
+    }
+
+    &:active {
+      transition: background 0s;
+      background-size: 100%;
+    }
+
+    &:disabled {
+      color: black;
+      background-color: gray;
+      cursor: default;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
