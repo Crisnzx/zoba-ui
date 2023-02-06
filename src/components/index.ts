@@ -4,3 +4,4 @@ export * from "./button";
 export * from "./carousel";
 export * from "./countdown";
 export * from "./form-components";
+export * from "./text";
