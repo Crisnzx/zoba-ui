@@ -27,12 +27,12 @@ export const Switch = ({
     <div className={classNames("z-switch", className)}>
       <div className="z-switch__container">
         <input
+          {...props}
           type="checkbox"
           className="z-switch__checkbox"
           onChange={(event) => onChange(event.target.checked)}
           checked={checked}
           disabled={disabled}
-          {...props}
         />
         {children}
       </div>
