@@ -20,21 +20,20 @@ export function Button({
   icon,
   theme = "primary",
   type = "button",
+  className,
   ...defaultProps
 }: ButtonProps) {
   return (
-    <div className="z-button">
-      <button
-        // eslint-disable-next-line react/button-has-type
-        type={type}
-        className={classNames("z-button__btn", `z-button__btn--${theme}`, {
-          "z-button__btn--loading": loading,
-        })}
-        {...defaultProps}
-      >
-        <span>{label}</span>
-        {icon}
-      </button>
-    </div>
+    <button
+      // eslint-disable-next-line react/button-has-type
+      {...defaultProps}
+      type={type}
+      className={classNames(className, "z-button", `z-button--${theme}`, {
+        "z-button--loading": loading,
+      })}
+    >
+      <span>{label}</span>
+      {icon}
+    </button>
   );
 }
