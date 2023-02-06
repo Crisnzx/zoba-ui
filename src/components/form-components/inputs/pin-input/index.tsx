@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { ONLY_NUMBER_REGEX } from "@/helpers/regex";
 import { ErrorContainer } from "@/components/form-components/error-container";
 
-export type PinInputProps = {
+type PinInputProps = {
   value: string;
   onChange: (value: string) => void;
   error?: string;

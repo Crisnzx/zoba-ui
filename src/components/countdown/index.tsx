@@ -11,7 +11,7 @@ import React, {
 import { NumberHelper } from "@/helpers/number-helper";
 import { TimeHelper } from "@/helpers/time-helper";
 
-export type CountdownProps = {
+type CountdownProps = {
   timeInSeconds: number;
   running?: boolean;
   className?: string;

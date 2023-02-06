@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { CheckIcon } from "@/assets/react-svgs";
 import { CloseIcon } from "@/assets/react-svgs";
 
-export type AlertProps = {
+type AlertProps = {
   type: "success" | "error";
   title: string;
   description: string;

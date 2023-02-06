@@ -10,7 +10,7 @@ import { Input } from "@/components/form-components/inputs/input";
 import { InputProps } from "@/components/form-components/inputs/input/input-props";
 import { Option } from "@/helpers/form-types";
 
-export type AutocompleteProps = Omit<InputProps, "type"> & {
+type AutocompleteProps = Omit<InputProps, "type"> & {
   options: Option[];
 };
 

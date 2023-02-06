@@ -7,7 +7,7 @@ type DefaultButtonProps = React.DetailedHTMLProps<
   HTMLButtonElement
 >;
 
-export type ButtonProps = {
+type ButtonProps = {
   label: string;
   loading?: boolean;
   icon?: React.ReactNode;

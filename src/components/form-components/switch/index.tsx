@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { ErrorContainer } from "@/components/form-components/error-container";
 
 // Add unit tests
-export type SwitchProps = {
+type SwitchProps = {
   children: React.ReactNode;
   checked: boolean;
   onChange: (checked: boolean) => void;
