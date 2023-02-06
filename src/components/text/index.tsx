@@ -16,7 +16,7 @@ type TextProps = {
   style: string;
   color: string;
   htmlTag: TextHtmlTags;
-  children: string;
+  children: React.ReactNode;
   uppercase?: boolean;
 };
 
