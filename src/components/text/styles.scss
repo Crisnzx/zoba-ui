@@ -1,0 +1,149 @@
+@import "../../styles/variables.scss";
+
+.z-text {
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--title1 {
+    font-size: 3.2rem;
+    line-height: 150%;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+
+    @include sm {
+      font-size: 3.6rem;
+    }
+  }
+
+  &--title2 {
+    font-size: 2.8rem;
+    line-height: 150%;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 3.2rem;
+    }
+  }
+
+  &--title3 {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 2.4rem;
+      line-height: 3.4rem;
+    }
+  }
+
+  &--subtitle1 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+    }
+  }
+
+  &--subtitle2 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  &--subtitle3 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+
+    @include sm {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  &--textp1 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  &--textp2 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  &--subtextp1 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  &--subtextp2 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  &--microp1 {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    @include sm {
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+    }
+  }
+
+  &--microp2 {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 0;
+
+    @include sm {
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+    }
+  }
+}
