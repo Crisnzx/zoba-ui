@@ -24,7 +24,15 @@ export const Accordion = ({
     : 0;
 
   return (
-    <div className={classNames("z-accordion", className)}>
+    <div
+      className={classNames(
+        "z-accordion",
+        {
+          "z-accordion--expanded": isExpanded,
+        },
+        className
+      )}
+    >
       <button
         type="button"
         className="z-accordion__header"
@@ -33,7 +41,9 @@ export const Accordion = ({
         aria-expanded={isExpanded ? "true" : "false"}
         aria-controls={`accordion-body-${randomId}`}
       >
-        <h3 id={`accordion-header-${randomId}`}>{headerTitle}</h3>
+        <h3 className="z-accordion__title" id={`accordion-header-${randomId}`}>
+          {headerTitle}
+        </h3>
         <ArrowDownIcon
           className={classNames("z-accordion__arrow", {
             "z-accordion__arrow--flip": isExpanded,
