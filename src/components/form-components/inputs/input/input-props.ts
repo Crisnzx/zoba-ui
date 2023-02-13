@@ -15,4 +15,5 @@ export type InputProps = Omit<
   onChange?: (value: string) => void;
   mask?: string;
   disablePaste?: boolean;
+  labelBackground?: string;
 };

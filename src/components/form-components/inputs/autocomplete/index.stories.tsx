@@ -31,16 +31,19 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   options,
+  label: "Primary",
 };
 
 export const DisabledPaste = Template.bind({});
 DisabledPaste.args = {
   options,
   disablePaste: true,
+  label: "Disabled paste",
 };
 
 export const Error = Template.bind({});
 Error.args = {
   options,
   error: "This field is required",
+  label: "Error",
 };

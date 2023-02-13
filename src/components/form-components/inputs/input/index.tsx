@@ -22,6 +22,7 @@ const InputComponent = (
     disablePaste,
     placeholder,
     readOnly,
+    labelBackground = "#fff",
     id = name,
     ...otherProps
   }: InputProps,
@@ -63,6 +64,7 @@ const InputComponent = (
           onPaste={disablePaste ? (e) => e.preventDefault() : undefined}
         />
         <label
+          style={{ backgroundColor: labelBackground }}
           className={classNames("z-input__label", {
             "z-input__label--has-text": value || placeholder,
           })}

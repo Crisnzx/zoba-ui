@@ -17,6 +17,7 @@ type TextareaProps = Omit<
   disableAutofill?: boolean;
   onChange?: (value: string) => void;
   disablePaste?: boolean;
+  labelBackground?: string;
 };
 
 export const Textarea = ({
@@ -31,6 +32,7 @@ export const Textarea = ({
   disablePaste,
   placeholder,
   readOnly,
+  labelBackground = "#fff",
   id = name,
   ...otherProps
 }: TextareaProps) => {
@@ -68,6 +70,7 @@ export const Textarea = ({
           onPaste={disablePaste ? (e) => e.preventDefault() : undefined}
         />
         <label
+          style={{ backgroundColor: labelBackground }}
           className={classNames("z-textarea__label", {
             "z-textarea__label--has-text": value || placeholder,
           })}
