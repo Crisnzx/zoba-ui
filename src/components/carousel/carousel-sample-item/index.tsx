@@ -21,7 +21,7 @@ export const CarouselSampleItem = ({
         <h2>{title}</h2>
         <p>{description}</p>
       </div>
-      <Button label="Click" onClick={onClick} />
+      <Button onClick={onClick}>Click</Button>
     </div>
   );
 };

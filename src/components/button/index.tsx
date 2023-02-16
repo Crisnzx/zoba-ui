@@ -8,19 +8,19 @@ type DefaultButtonProps = React.DetailedHTMLProps<
 >;
 
 type ButtonProps = {
-  label: string;
+  children: string;
   loading?: boolean;
   icon?: React.ReactNode;
   theme?: string;
 } & DefaultButtonProps;
 
 export function Button({
-  label,
   loading = false,
   icon,
   theme = "primary",
   type = "button",
   className,
+  children,
   ...defaultProps
 }: ButtonProps) {
   return (
@@ -32,7 +32,7 @@ export function Button({
         "z-button--loading": loading,
       })}
     >
-      <span>{label}</span>
+      <span>{children}</span>
       {icon}
     </button>
   );

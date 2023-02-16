@@ -21,12 +21,12 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  label: "Primary Button",
+  children: "Primary Button",
   className: "oi",
 };
 
 export const Gray = Template.bind({});
 Gray.args = {
-  label: "Gray Button",
+  children: "Gray Button",
   theme: ButtonThemes.GRAY,
 };
